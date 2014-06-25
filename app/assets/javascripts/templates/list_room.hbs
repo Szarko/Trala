@@ -1,0 +1,17 @@
+ <div class="room_banner">
+    <h3>Active Rooms</h3>
+  </div>
+  <div class = "room-container">
+      <ul class="row clearfix">
+          {{#each studio}}
+          <div id="{{name}}" class="studio column full">
+            <p id="{{name}}">
+              <span class="list_room_text"> Name    {{name}}</span>
+              <span class="list_room_text"> <i class="fi-people"> {{data.listenerCount}} </i> </span>
+              <span class="list_room_text"> <i class="fi-location"> {{data.distanceFromStudioStartLocation}} ft </i> </span>
+            </p>
+          </div>
+          {{/each}}
+      </ul>
+  </div>
+

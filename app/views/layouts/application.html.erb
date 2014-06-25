@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trala</title>
+  <script src="http://connect.soundcloud.com/sdk.js"></script>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <link href='http://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+  <div class="navigation">
+  <div class="colorstrip"></div>
+    <div class="inside-nav">
+    </div>
+      <ul>
+        <div class="logo-text">
+          <li>
+            <a id="logo-word" href="/">
+              <span class="logo-icon"><i class="fa fa-tumblr fa-flip-horizontal"></i>
+              </span>
+              Trala
+            </a>
+          </li>
+        </div>
+      </ul>
+  </div>
+  <div class="container">
+    <div class="row clearfix">
+      <div class="column full">
+         <%= yield %>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
